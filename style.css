@@ -102,18 +102,19 @@ body {
     align-items: center;
 }
 
+.project-tile > a {  
+    text-decoration: none;  
+    display: flex;
+    flex-direction: column;
+}
+
 img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.project-tile {    
-    display: flex;
-    flex-direction: column;
-}
-
-.project-tile > h3 {
+.project-tile > a > h3 {
     padding: 25px;
     margin: 0px 0px 50px 0px;
     color: white;
@@ -202,20 +203,118 @@ footer > span:first-child {
 
 @media (min-width: 500px) and (max-width: 800px) {
 
+    #navbar ul {
+        margin: 0;
+        margin-right: 25px;
+        justify-content: flex-end;
+    }
+
     img {
-        max-width: 500px;
-        height: 500px;
+        max-width: 480px;
+        height: 480px;
         object-fit: cover;
+    }
+
+    footer {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > span {
+        text-align: left;
+    }
+
+    footer > span:first-child {
+        margin-top: 0px;
     }
 }
 
 @media (min-width: 800px) and (max-width: 1000px) {
 
+    #navbar ul {
+        margin-right: 40px;
+        justify-content: flex-end;
+    }
 
+    #navbar ul li {
+        margin: 0 15px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        max-width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    footer {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > span {
+        text-align: left;
+    }
+
+    footer > span:first-child {
+        margin-top: 0px;
+    }
 
 }
 
 @media (min-width: 1000px) {
 
+    #navbar ul {
+        margin-right: 70px;
+        justify-content: flex-end;
+    }
+
+    #navbar ul li {
+        margin: 0 20px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    footer {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > span {
+        text-align: left;
+    }
+
+    footer > span:first-child {
+        margin-top: 0px;
+    }
     
 }
